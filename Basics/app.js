@@ -1,9 +1,10 @@
-//console.lo())
-let firstName = "David is a good man";
-let secondName = "Smith";
-// let fullName = firstName.concat(" ", secondName);
-// console.log(fullName);
-// firstName += " Something else ";
-// console.log(firstName.toUpperCase());
-// console.log(firstName.slice(0, 2));
-console.log(firstName.split(" "));
+let money = "50";
+
+console.log(typeof money);
+// Convert string to number
+// money = parseInt(money);
+
+// money = +money;
+money = Number(money);
+
+console.log(typeof money);
