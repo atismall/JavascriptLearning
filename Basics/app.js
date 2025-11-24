@@ -1,10 +1,5 @@
-let money = "50";
-
+let money = "50.245";
 console.log(typeof money);
-// Convert string to number
-// money = parseInt(money);
 
-// money = +money;
-money = Number(money);
-
+money = parseFloat(money);
 console.log(typeof money);
