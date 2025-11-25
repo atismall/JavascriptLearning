@@ -1,4 +1,11 @@
-const fruits = ["apples", "pomegranate", "mango"];
-const moreFruits = ["strawberries", "pineapple", "grapefruit"];
-const totalFruits = fruits.concat(moreFruits);
-console.log(totalFruits);
+const person = {
+  firstName: "David",
+  lastName: "Damilare",
+  age: 32,
+  location: ["Planet", "Earth"],
+  isProgrammer: true,
+};
+
+console.log(typeof person);
+const arr = [];
+console.log(typeof arr);
