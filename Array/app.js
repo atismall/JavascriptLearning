@@ -1,11 +1,9 @@
-const person = {
-  firstName: "David",
-  lastName: "Damilare",
-  age: 32,
-  location: ["Planet", "Earth"],
-  isProgrammer: true,
+const car = {
+  type: "Ford",
+  model: "2023",
+  color: "Green",
 };
-
-console.log(typeof person);
-const arr = [];
-console.log(typeof arr);
+console.log(typeof car);
+car.type = "toyota";
+car.wheel = "32 inches";
+console.log(car);
