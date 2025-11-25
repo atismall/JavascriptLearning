@@ -1,7 +1,5 @@
-let password = "gavid-webdev";
-
-if (password.length >= 8 && password.includes("dav")) {
-  console.log("Valid Password");
-} else {
-  console.log("Invalid Password");
+// console.log("first");
+const stringArr = ["eat", ["good", "awesome"], "sleep", "code", "repeat"];
+for (let i = 0; i < stringArr.length; i++) {
+  console.log(stringArr[i]);
 }
