@@ -1,9 +1,11 @@
 const person = {
-  name: "John",
-  age: 12,
-  greet: () => {
-    return `Hello, my name is ${person.name} & I am ${person.age} years old. 
-    Also can this be a recursion ${person.greet}`;
+  name: "John Doe",
+  age: 20,
+  email: "js@gmail.com",
+  isSubscribed: true,
+  hobbies: ["Reading", "Running", "Cooking"],
+  address: {
+    city: "New York",
+    idk: true,
   },
 };
-console.log(person.greet());
