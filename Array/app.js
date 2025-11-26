@@ -1,9 +1,9 @@
-const car = {
-  type: "Ford",
-  model: "2023",
-  color: "Green",
+const person = {
+  name: "John",
+  age: 12,
+  greet: () => {
+    return `Hello, my name is ${person.name} & I am ${person.age} years old. 
+    Also can this be a recursion ${person.greet}`;
+  },
 };
-console.log(typeof car);
-car.type = "toyota";
-car.wheel = "32 inches";
-console.log(car);
+console.log(person.greet());
