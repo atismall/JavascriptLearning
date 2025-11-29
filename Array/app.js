@@ -1,11 +1,2 @@
-const person = {
-  name: "John Doe",
-  age: 20,
-  email: "js@gmail.com",
-  isSubscribed: true,
-  hobbies: ["Reading", "Running", "Cooking"],
-  address: {
-    city: "New York",
-    idk: true,
-  },
-};
+
+  
