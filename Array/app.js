@@ -1,15 +1,37 @@
-// function greet() {
-//   console.log(`Hello ${username}`);
+// function user(name, age, work) {
+//   return { name, age, work, intro: () => console.log(`My name is ${name}`) };
 // }
 
-// const username = "David";
+// const huxn = user(20, "david", "programmer");
+// const atibig = user("atibi", 20, "designer");
 
-// greet();
+// console.log(huxn.intro());
 
-// console.log();
+// const a = 1,
+//   b = 2,
+//   c = 3;
 
-// (() => console.log(`hello ${username}`))();
+// const obj = { a, b, c };
 
-const double = (number) => number * 2;
+// console.log(obj);
 
-console.log(double(7));
+// const lib = {
+//   sum: (a, b) => a + b,
+//   mult: (a, b) => a * b,
+// };
+
+// console.log(lib.sum(2, 4), lib.mult(2, 4));
+
+// function getPersionsES6 (name, age, height) {
+//     return {name, age, height }
+// } ;
+// function getPersionsES6(name, age, height) {
+//   console.log(`Good ${name}`);
+//   return { name, age, height };
+// }
+
+// // const getPersionsES6 = (name, age, height) => ({ name, age, height });
+
+// const idea = getPersionsES6("HuSn", 19, 200);
+
+// console.log(idea);
