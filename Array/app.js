@@ -1,31 +1,15 @@
-const date = new Date();
-console.log(date);
+// function greet() {
+//   console.log(`Hello ${username}`);
+// }
 
-// const year = date.getFullYear();
-// const month = date.getMonth();
-// const day = date.getDay();
-// const hours = date.getHours();
-// const minutes = date.getMinutes();
-// const seconds = date.getSeconds();
-// const milliSeconds = date.getMilliseconds();
+// const username = "David";
 
-// console.log(`YEAR : ${year}
-// MONTH: ${month}
-// DAY: ${day}
-// HOURS: ${hours}
-// MINUTES: ${minutes}
-// SECONDS: ${seconds}
-// MILLISECONDS: ${milliSeconds}
-//   `);
+// greet();
 
-// console.log(date.toDateString());
-// console.log(date.toISOString());
-// console.log(date.toLocaleString());
-// date.setDate(date.getDate() + 1);
-// console.log(date.toDateString());
+// console.log();
 
-// setInterval(
-//   () => console.log(`This function will be executed every 2 seconds`),
-//   2000
-// );
-clearInterval();
+// (() => console.log(`hello ${username}`))();
+
+const double = (number) => number * 2;
+
+console.log(double(7));
