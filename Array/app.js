@@ -1,13 +1,27 @@
-// function person(firstName, lastName, ...hobbies) {
-//   console.log("FirstName:", firstName);
-//   console.log("Lastname:", lastName);
-//   console.log("Hobbies:", hobbies);
-// }
+const colors = ["red", "green", "blue", "yellow", "orange"];
 
-// person("David", "Atibig", "reading", "praying", "skipping");
+const [color1, color2, color3] = colors;
 
-function goodData(...userData) {
-  console.log(userData);
+console.log("color 1:", color1, "| color 2:", color2, "| color 3:", color3);
+// console.log();
+
+const student = { name: "Dave", position: "First", rollNo: 27 };
+
+const { ...rest } = student;
+
+console.log(rest.rollNo, rest.position);
+
+const person = {
+  name: "John Doe",
+  age: 30,
+  gender: "male",
+  country: "USA",
+};
+
+function printpersonInfo({ name, age, country }) {
+  console.log(`Name: ${name}`);
+  console.log(`Age: ${age}`);
+  console.log(`Country: ${country}`);
 }
 
-goodData("Dave", "Programmer", 20, 19, ["one"]);
+printpersonInfo(person);
