@@ -141,38 +141,80 @@
 // const canBuyProduct = haveMoney ? `can buy product` : `Bring Money`;
 // console.log(canBuyProduct);
 
-let person = {
-  name: "Dave",
-  age: 20,
-  gender: "male",
-};
+// let person = {
+//   name: "Dave",
+//   age: 20,
+//   gender: "male",
+// };
 
-console.log(person["name"]);
+// console.log(person["name"]);
 
-for (let keys in person) {
-  console.log(keys, person[keys]);
+// for (let keys in person) {
+//   console.log(keys, person[keys]);
+// }
+
+// let list = ["one", "two", "three"];
+
+// for (let index in list) {
+//   console.log(index, list[index]);
+// }
+
+// const objects = { a: 1, b: 2, c: 3 };
+
+// for (let object in objects) {
+//   console.log(`${object}: ${objects[object]}`);
+// }
+
+// let peoples = ["Dave", "Alex", "John", "brad"];
+
+// for (let people of peoples) {
+//   console.log(people);
+// }
+
+// const array1 = ["a", "b", "c"];
+
+// for (const array of array1) {
+//   console.log(array);
+// }
+
+const colors = ["teal", "red", "blue", "green"];
+
+// colors.forEach((item) => console.log(this, item));
+
+colors.forEach((color, index, array) => console.log(color, index, array));
+
+const words = ["hello", "bird", "table", "football", "pipe"];
+
+words.forEach(function (word) {
+  if (word === "hello") {
+    for (let letter in word) {
+      console.log(`${letter} : ${word[letter]}`);
+    }
+  }
+});
+
+words.forEach(function (word, index, arr) {
+  arr[index] = word[0].toUpperCase() + word.substring(1);
+  // console.log(words);
+});
+
+console.log(words);
+
+const num = [3, 4, 5, 4, 7, 89, 54, 23];
+
+let res = 0;
+
+num.forEach((number) => (res += number));
+
+console.log(res);
+
+let numbers = [1, 2, 3, 4, 5];
+
+let sum = 0;
+
+function adder(number) {
+  sum += number;
 }
 
-let list = ["one", "two", "three"];
-
-for (let index in list) {
-  console.log(index, list[index]);
-}
-
-const objects = { a: 1, b: 2, c: 3 };
-
-for (let object in objects) {
-  console.log(`${object}: ${objects[object]}`);
-}
-
-let peoples = ["Dave", "Alex", "John", "brad"];
-
-for (let people of peoples) {
-  console.log(people);
-}
-
-const array1 = ["a", "b", "c"];
-
-for (const array of array1) {
-  console.log(array);
-}
+numbers.forEach(adder);
+console.log(sum);
