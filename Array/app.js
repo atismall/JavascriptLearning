@@ -1,5 +1,13 @@
-function user(...userData) {
-  return userData.reduce((total, n) => total + n, 5);
+// function person(firstName, lastName, ...hobbies) {
+//   console.log("FirstName:", firstName);
+//   console.log("Lastname:", lastName);
+//   console.log("Hobbies:", hobbies);
+// }
+
+// person("David", "Atibig", "reading", "praying", "skipping");
+
+function goodData(...userData) {
+  console.log(userData);
 }
 
-console.log(user(5, 10, 15));
+goodData("Dave", "Programmer", 20, 19, ["one"]);
