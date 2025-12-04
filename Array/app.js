@@ -340,9 +340,9 @@
 // product.push(res);
 // console.log(product);
 
-const ages = [12, 12, 11, 13];
+// const ages = [12, 12, 11, 13];
 
-const allOldEnough = ages.every((age) => age > 10);
+// const allOldEnough = ages.every((age) => age > 10);
 
 // if (allOldEnough) {
 //   console.log(`Every of the student is above 10 years Old`);
@@ -352,19 +352,19 @@ const allOldEnough = ages.every((age) => age > 10);
 
 // Testing if someone brought snacks school
 
-const snacks = ["none", "none", "biscuits", "none"];
+// const snacks = ["none", "none", "biscuits", "none"];
 
-const someoneHasSnacks = snacks.some((snack) => snack !== "none");
+// const someoneHasSnacks = snacks.some((snack) => snack !== "none");
 
 // console.log(someoneHasSnacks);
 
-const packs = [3, 4, 6];
+// const packs = [3, 4, 6];
 
-const totalBuscuit = packs.reduce((total, eachpack) =>
-  eachpack > total ? eachpack : total
-);
+// const totalBuscuit = packs.reduce((total, eachpack) =>
+//   eachpack > total ? eachpack : total
+// );
 
-console.log(totalBuscuit);
+// console.log(totalBuscuit);
 
 // Combining words into a sentence using reduce methods
 
@@ -374,12 +374,49 @@ console.log(totalBuscuit);
 
 // console.log(sentences);
 
-const items = [
-  { item: "bread", price: 300 },
-  { item: "milk", price: 500 },
-  { item: "egg", price: 200 },
+// const items = [
+//   { item: "bread", price: 300 },
+//   { item: "milk", price: 500 },
+//   { item: "egg", price: 200 },
+// ];
+
+// const totalPrices = items.reduce((store, item) => (store += item.price), 0);
+
+// console.log(totalPrices);
+
+const students = [
+  { name: "Dave", gender: "boy" },
+  { name: "Anna", gender: "girl" },
+  { name: "James", gender: "boy" },
+  { name: "Rose", gender: "girl" },
 ];
 
-const totalPrices = items.reduce((store, item) => (store += item.price), 0);
+const count = students.reduce(
+  (store, person) => {
+    if (person.gender === "boy") {
+      store.boys++;
+    } else {
+      store.girls++;
+    }
+    return store;
+  },
+  { boys: 0, girls: 0 }
+);
 
-console.log(totalPrices);
+console.log(count);
+
+const peoples = [
+  { name: "John", age: 20 },
+  { name: "Anna", age: 20 },
+  { name: "Mike", age: 25 },
+];
+
+const grouped = peoples.reduce((store, people) => {
+  if (!store[people.age]) {
+    store[people.age] = [];
+  }
+  store[people.age].push(people.name);
+  return store;
+}, {});
+
+console.log(grouped);
