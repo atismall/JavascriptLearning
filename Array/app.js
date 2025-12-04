@@ -3,7 +3,7 @@
 // const [color1, color2, color3] = colors;
 
 // console.log("color 1:", color1, "| color 2:", color2, "| color 3:", color3);
-// // console.log();
+// console.log();
 
 // const student = { name: "Dave", position: "First", rollNo: 27 };
 
@@ -81,7 +81,7 @@
 //   },
 // };
 
-// // ------------------------------------------- Destructuring -----------------------------------------
+// ------------------------------------------- Destructuring -----------------------------------------
 
 // const {
 //   user: {
@@ -177,44 +177,166 @@
 //   console.log(array);
 // }
 
-const colors = ["teal", "red", "blue", "green"];
+// const colors = ["teal", "red", "blue", "green"];
 
 // colors.forEach((item) => console.log(this, item));
 
-colors.forEach((color, index, array) => console.log(color, index, array));
+// colors.forEach((color, index, array) => console.log(color, index, array));
 
-const words = ["hello", "bird", "table", "football", "pipe"];
+// const words = ["hello", "bird", "table", "football", "pipe"];
 
-words.forEach(function (word) {
-  if (word === "hello") {
-    for (let letter in word) {
-      console.log(`${letter} : ${word[letter]}`);
-    }
-  }
-});
+// words.forEach(function (word) {
+//   if (word === "hello") {
+//     for (let letter in word) {
+//       console.log(`${letter} : ${word[letter]}`);
+//     }
+//   }
+// });
 
-words.forEach(function (word, index, arr) {
-  arr[index] = word[0].toUpperCase() + word.substring(1);
-  // console.log(words);
-});
+// words.forEach(function (word, index, arr) {
+//   arr[index] = word[0].toUpperCase() + word.substring(1);
+// console.log(words);
+// });
 
-console.log(words);
+// console.log(words);
 
-const num = [3, 4, 5, 4, 7, 89, 54, 23];
+// const num = [3, 4, 5, 4, 7, 89, 54, 23];
 
-let res = 0;
+// let res = 0;
 
-num.forEach((number) => (res += number));
+// num.forEach((number) => (res += number));
 
-console.log(res);
+// console.log(res);
 
-let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 
-let sum = 0;
+// let sum = 0;
 
-function adder(number) {
-  sum += number;
+// function adder(number) {
+//   sum += number;
+// }
+
+// numbers.forEach(adder);
+// console.log(sum);
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// let double = numbers.map((num) => num * 2);
+
+// console.log(numbers);
+// console.log("doubele:", double);
+
+// let peoples = [
+//   { firstname: "Macoon", lastName: "Juvenile" },
+//   { firstname: "Kirk", lastName: "Charles" },
+//   { firstname: "Cook", lastName: "Brown" },
+//   { firstname: "John", lastName: "Cena" },
+// ];
+
+// const res = peoples.map((person) => {
+//   return [person.firstname, person.lastName];
+// });
+
+// console.log(res);
+
+// let numbers = [3, 4, 6, 8, 2];
+
+// let sum = 0;
+
+// let multiplyNumbers = numbers.forEach((num) => {
+//   return (sum += num);
+// });
+
+// console.log(sum);
+
+// const songs = [
+//   { name: "Lucky You", singer: "Joyner", duration: 4.34 },
+//   { name: "Just like you", singer: "Nf", duration: 3.23 },
+//   { name: "Humble singer", singer: "kendrick Lomar", duration: 3.23 },
+//   { name: "Old Town Road", singer: "Lil Nos x", duration: 3.56 },
+// ];
+
+// const newSongs = songs.filter((song) => song.duration > 3);
+
+// console.log(newSongs);
+
+// const computers = [
+//   { ram: 4, hdd: 100 },
+//   { ram: 8, hdd: 200 },
+//   { ram: 16, hdd: 300 },
+//   { ram: 32, hdd: 400 },
+//   { ram: 4, hdd: 500 },
+// ];
+
+// const compGreater16 = computers.filter((comp) => comp.ram < 16);
+
+// console.log(compGreater16);
+
+// const ages = [32, 33, 16, 40];
+
+// function checkAdults(age) {
+//   return age > 18;
+// }
+
+// console.log(ages.filter(checkAdults));
+
+// const words = [
+//   "spray",
+//   "limit",
+//   "elite",
+//   "exuberant",
+//   "destruction",
+//   "present",
+// ];
+
+// console.log(words.filter((word) => word.length > 5));
+
+// const peoples = [
+//   { name: "Dave", age: 20 },
+//   { name: "John", age: 19 },
+//   { name: "Alex", age: 32 },
+//   { name: "Limmy", age: 30 },
+//   { name: "Alex", age: 40 },
+// ];
+
+// const AlexAge = peoples.filter((people) => people.name === "Alex");
+
+// AlexAge.forEach((person) => console.log(person.age));
+
+// const posts = [
+//   { id: 1, content: "Good Post" },
+//   { id: 2, content: "Funny Post" },
+//   { id: 3, content: "Sad Post" },
+// ];
+
+// const postRes = posts.find((post) => post.content === "Good Post");
+
+// console.log(postRes);
+
+// const ages = [3, 10, 18, 20];
+
+// console.log(ages.filter((age) => age >= 18));
+
+// let products = [
+//   { name: "Checkers", category: "Toys" },
+//   { name: "Harry Potter", category: "Books" },
+//   { name: "iPhone", category: "Electronics" },
+//   { name: "Learn PHP", category: "Books" },
+// ];
+
+// let product = [];
+
+// const res = products.find((product) => product.category === "Books");
+
+// product.push(res);
+// console.log(product);
+
+const ages = [12, 12, 11, 13];
+
+const allOldEnough = ages.every((age) => age > 10);
+
+if (allOldEnough) {
+  console.log(`Every of the student is above 10 years Old`);
+} else {
+  console.log(`Some of the student involve are not above 10years `);
 }
-
-numbers.forEach(adder);
-console.log(sum);
