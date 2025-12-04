@@ -324,6 +324,15 @@
 //   { name: "Learn PHP", category: "Books" },
 // ];
 
+// let allProductsBooks;
+// let someProductsBooks;
+
+// const result = products.every((product) => product.category === "Books")
+//   ? ("allProductsBooks", (allProductsBooks = false))
+//   : ("someProductsBooks", (someProductsBooks = true));
+
+// console.log(result);
+
 // let product = [];
 
 // const res = products.find((product) => product.category === "Books");
@@ -335,8 +344,42 @@ const ages = [12, 12, 11, 13];
 
 const allOldEnough = ages.every((age) => age > 10);
 
-if (allOldEnough) {
-  console.log(`Every of the student is above 10 years Old`);
-} else {
-  console.log(`Some of the student involve are not above 10years `);
-}
+// if (allOldEnough) {
+//   console.log(`Every of the student is above 10 years Old`);
+// } else {
+//   console.log(`Some of the student involve are not above 10years `);
+// }
+
+// Testing if someone brought snacks school
+
+const snacks = ["none", "none", "biscuits", "none"];
+
+const someoneHasSnacks = snacks.some((snack) => snack !== "none");
+
+// console.log(someoneHasSnacks);
+
+const packs = [3, 4, 6];
+
+const totalBuscuit = packs.reduce((total, eachpack) =>
+  eachpack > total ? eachpack : total
+);
+
+console.log(totalBuscuit);
+
+// Combining words into a sentence using reduce methods
+
+// const words = ["I", "love", "JavaScript"];
+
+// const sentences = words.reduce((sentence, word) => `${sentence} ${word}`);
+
+// console.log(sentences);
+
+const items = [
+  { item: "bread", price: 300 },
+  { item: "milk", price: 500 },
+  { item: "egg", price: 200 },
+];
+
+const totalPrices = items.reduce((store, item) => (store += item.price), 0);
+
+console.log(totalPrices);
