@@ -384,39 +384,75 @@
 
 // console.log(totalPrices);
 
-const students = [
-  { name: "Dave", gender: "boy" },
-  { name: "Anna", gender: "girl" },
-  { name: "James", gender: "boy" },
-  { name: "Rose", gender: "girl" },
-];
+// const students = [
+//   { name: "Dave", gender: "boy" },
+//   { name: "Anna", gender: "girl" },
+//   { name: "James", gender: "boy" },
+//   { name: "Rose", gender: "girl" },
+// ];
 
-const count = students.reduce(
-  (store, person) => {
-    if (person.gender === "boy") {
-      store.boys++;
-    } else {
-      store.girls++;
-    }
-    return store;
-  },
-  { boys: 0, girls: 0 }
-);
+// const count = students.reduce(
+//   (store, person) => {
+//     if (person.gender === "boy") {
+//       store.boys++;
+//     } else {
+//       store.girls++;
+//     }
+//     return store;
+//   },
+//   { boys: 0, girls: 0 }
+// );
 
-console.log(count);
+// console.log(count);
+
+// const peoples = [
+//   { name: "John", age: 20 },
+//   { name: "Anna", age: 20 },
+//   { name: "Mike", age: 25 },
+// ];
+
+// const grouped = peoples.reduce((store, people) => {
+//   if (!store[people.age]) {
+//     store[people.age] = [];
+//   }
+//   store[people.age].push(people.name);
+//   return store;
+// }, {});
+
+// console.log(grouped);
 
 const peoples = [
-  { name: "John", age: 20 },
-  { name: "Anna", age: 20 },
-  { name: "Mike", age: 25 },
+  {
+    name: "Dave WebDev",
+    age: 19,
+  },
+  {
+    name: "Alex Hormozi",
+    age: 29,
+  },
+  {
+    name: "John Web",
+    age: 40,
+  },
 ];
 
-const grouped = peoples.reduce((store, people) => {
-  if (!store[people.age]) {
-    store[people.age] = [];
-  }
-  store[people.age].push(people.name);
-  return store;
-}, {});
+// const oldestGuy = peoples.reduce(
+//   (store, people) => {
+//     store = {
+//       name1: store[people.name],
+//       age1: store[people.age],
+//     };
+//     // store[people.name] = "name";
+//     // store[people.age] = "age";
+//     if (people.age > store.age) {
+//       return people.age;
+//     } else {
+//       return store.age;
+//     }
+//   },
+//   { name1: "", age1: 0 }
+// );
 
-console.log(grouped);
+// console.log(oldestGuy);
+
+// const oldestGuy1 = peoples.reduce((store, people) => store > people.age ? store : people.age)
