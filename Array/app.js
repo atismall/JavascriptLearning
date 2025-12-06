@@ -421,20 +421,20 @@
 
 // console.log(grouped);
 
-const peoples = [
-  {
-    name: "Dave WebDev",
-    age: 19,
-  },
-  {
-    name: "Alex Hormozi",
-    age: 29,
-  },
-  {
-    name: "John Web",
-    age: 40,
-  },
-];
+// const peoples = [
+//   {
+//     name: "Dave WebDev",
+//     age: 19,
+//   },
+//   {
+//     name: "Alex Hormozi",
+//     age: 29,
+//   },
+//   {
+//     name: "John Web",
+//     age: 40,
+//   },
+// ];
 
 // const oldestGuy = peoples.reduce(
 //   (store, people) => {
@@ -456,3 +456,20 @@ const peoples = [
 // console.log(oldestGuy);
 
 // const oldestGuy1 = peoples.reduce((store, people) => store > people.age ? store : people.age)
+
+// const words = ["apple", "banana", "orange", "banana", "apple", "grape"];
+
+// const wordFrequency = words.reduce((frequency, word) => {
+//   frequency[word] = (frequency[word] || 0) + 1;
+//   return frequency;
+// }, {});
+
+// console.log(wordFrequency);
+
+// console.log(undefined || 0);
+
+// const numbers = [2, 3, 4, 5];
+
+// const product = numbers.reduce((sum, num) => (sum *= num), 1);
+
+// console.log(product);
