@@ -32,9 +32,43 @@ for (let juice of cart.values()) {
   //   console.log(juice);
 }
 
-console.log(cart.keys());
-console.log(cart.values());
+// console.log(cart.keys());
+// console.log(cart.values());
 
 const map = new Map();
 
+const set = new Set();
+// console.log(set);
+
+set.add("Buruto");
+let word = ["apple", "banana", "apple", "orange"];
+
+word = new Set(word);
+// console.log(word);
+
+for (let uniqueWord of word) {
+  //   console.log(uniqueWord);
+}
 // console.log(map);
+
+const myObject = {};
+
+const id = Symbol("id");
+
+myObject[id] = 123;
+// myObject[id] = 245;
+
+// console.log(myObject);
+
+const secret = Symbol("secret");
+
+const user = {
+  name: "Alice",
+  [secret]: 42,
+};
+
+console.log(user[secret]);
+
+for (let key in user) {
+  console.log(key);
+}
